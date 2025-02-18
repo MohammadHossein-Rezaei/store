@@ -1,0 +1,43 @@
+.comments-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0px;
+}
+.comments-container {
+  display: grid;
+
+  gap: 15px;
+}
+.comment {
+  width: 200px;
+  text-align: center;
+}
+.comment img {
+  border-radius: 50%;
+  width: 50px;
+  padding: 30px;
+}
+.titles {
+  margin: 10px;
+  margin-top: 20px;
+}
+.color-title {
+  color: #818498;
+  justify-self: center;
+}
+.paragraph-p {
+  font-size: 16px;
+}
+@media screen and (min-width: 675px) {
+  .comments-container {
+    grid-template-columns: auto 1fr 1fr;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 675px) {
+  .comments-container {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

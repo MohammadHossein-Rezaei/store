@@ -1,0 +1,25 @@
+.contect {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #3caa94c7;
+  text-align: center;
+}
+.contect-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+  gap: 20px;
+}
+.contect-list li:hover {
+  transition: 0.5s;
+  color: #fff;
+}
+.contect b {
+  font-size: 25px;
+  color: #25564b;
+}
+.social-media img {
+  padding: 10px;
+}

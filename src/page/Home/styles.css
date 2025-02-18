@@ -1,0 +1,17 @@
+.home {
+  display: grid;
+  justify-self: center;
+  height: 100%;
+}
+@media screen and (min-width: 675px) {
+  .home {
+    grid-template-rows: max-content auto auto;
+  }
+}
+@media screen and (max-width: 675px) {
+  .home {
+    grid-template-rows: auto auto auto;
+
+    width: 100%;
+  }
+}

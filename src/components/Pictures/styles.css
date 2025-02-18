@@ -1,0 +1,21 @@
+.pictures {
+  display: grid;
+}
+.pictures img {
+  max-width: 180px;
+  width: 100%;
+}
+@media screen and (min-width: 675px) {
+  .pictures {
+    grid-template-columns: auto auto 180px 180px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .pictures {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .pictures img {
+    height: 100%;
+  }
+}
