@@ -1,13 +1,13 @@
 import "./styles.css";
-type Props = {};
+import emily from "/images/image-emily.jpg";
 
-export default function Comment({}: Props) {
+export default function Comment() {
   return (
     <div className="comments-section">
       <h4 className="titles color-title ">CLIENT TESTIMONIALS</h4>
       <div className="comments-container">
         <div className="comment">
-          <img src="/images/image-emily.jpg" alt="profile" />
+          <img src={emily} alt="profile" />
           <p className="paragraph-p">
             We put trust in Sunnyside and they delivered, making sure our needs
             were met and deadlines were always hit.
@@ -16,7 +16,7 @@ export default function Comment({}: Props) {
           <p className="paragraph-p">Marketing Director</p>
         </div>
         <div className="comment">
-          <img src="/images/image-emily.jpg" alt="profile" />
+          <img src={emily} alt="profile" />
           <p className="paragraph-p">
             We put trust in Sunnyside and they delivered, making sure our needs
             were met and deadlines were always hit.
@@ -25,7 +25,7 @@ export default function Comment({}: Props) {
           <p className="paragraph-p">Marketing Director</p>
         </div>
         <div className="comment">
-          <img src="/images/image-emily.jpg" alt="profile" />
+          <img src={emily} alt="profile" />
           <p className="paragraph-p">
             We put trust in Sunnyside and they delivered, making sure our needs
             were met and deadlines were always hit.

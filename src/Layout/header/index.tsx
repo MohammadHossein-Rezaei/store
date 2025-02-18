@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
-type Props = {};
+import hamB from "/images/icon-hamburger.svg";
+import arrowDown from "/images/icon-arrow-down.svg";
+import imageHeaderM from "/images/icon-arrow-down.svg";
+import imageHeaderD from "/images/desktop/image-header.jpg";
 
-export default function Header({}: Props) {
+export default function Header() {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 675);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -32,7 +35,7 @@ export default function Header({}: Props) {
           <>
             <img
               className="menu-mobile"
-              src="/images/icon-hamburger.svg"
+              src={hamB}
               alt="menu"
               onClick={toggleMenu}
             />
@@ -56,17 +59,13 @@ export default function Header({}: Props) {
         )}
         <div className="logo-header">
           <h1 className="titles">WE ARE CREATIVES</h1>
-          <img src="/images/icon-arrow-down.svg" alt="down" />
+          <img src={arrowDown} alt="down" />
         </div>
       </div>
 
       <img
         className="banner"
-        src={
-          isMobile
-            ? "/images/mobile/image-header.jpg"
-            : "/images/desktop/image-header.jpg"
-        }
+        src={isMobile ? imageHeaderM : imageHeaderD}
         alt="banner"
       />
     </header>

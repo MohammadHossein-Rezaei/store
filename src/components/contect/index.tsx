@@ -1,7 +1,10 @@
 import "./styles.css";
-type Props = {};
+import faceBook from "/images/icon-facebook.svg";
+import instagram from "/images/icon-instagram.svg";
+import twitter from "/images/icon-twitter.svg";
+import pinterest from "/images/icon-pinterest.svg";
 
-export default function Contect({}: Props) {
+export default function Contect() {
   return (
     <div className="contect">
       <b>sunnyside</b>
@@ -11,10 +14,10 @@ export default function Contect({}: Props) {
         <li>Projects</li>
       </ul>
       <div className="social-media">
-        <img src="/images/icon-facebook.svg" alt="facebook" />
-        <img src="/images/icon-instagram.svg" alt="instagram" />
-        <img src="/images/icon-twitter.svg" alt="twitter" />
-        <img src="/images/icon-pinterest.svg" alt="pinterest" />
+        <img src={faceBook} alt="facebook" />
+        <img src={instagram} alt="instagram" />
+        <img src={twitter} alt="twitter" />
+        <img src={pinterest} alt="pinterest" />
       </div>
     </div>
   );
